@@ -1,0 +1,12 @@
+{
+  "name": "Discount Banner",
+  "target": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "discount_message",
+      "label": "Discount Message",
+      "default": "Limited-time discount available!"
+    }
+  ]
+}

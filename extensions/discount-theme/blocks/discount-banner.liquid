@@ -1,0 +1,18 @@
+<div class="discount-banner" id="discount-banner">
+  Loading discount info...
+</div>
+
+<script>
+  fetch('https://render-sample-app-zue8.onrender.com/api.discounts?product_id={{ product.id }}')
+    .then(response => response.json())
+    .then(data => {
+      if (data.discount) {
+        document.getElementById('discount-banner').innerText = data.discount;
+      } else {
+        document.getElementById('discount-banner').style.display = 'none';
+      }
+    })
+    .catch(() => {
+      document.getElementById('discount-banner').style.display = 'none';
+    });
+</script>

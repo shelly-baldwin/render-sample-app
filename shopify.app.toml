@@ -3,7 +3,7 @@
 client_id = "72caa794d011b6f2f913956aef44ef66"
 name = "render-sample-app"
 handle = "render-sample-app-1"
-application_url = "https://italy-prove-albany-madrid.trycloudflare.com"
+application_url = "https://render-sample-app-zue8.onrender.com"
 embedded = true
 
 [build]
@@ -23,13 +23,13 @@ api_version = "2025-04"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "write_products, write_discounts"
 
 [auth]
 redirect_urls = [
-  "https://italy-prove-albany-madrid.trycloudflare.com/auth/callback",
-  "https://italy-prove-albany-madrid.trycloudflare.com/auth/shopify/callback",
-  "https://italy-prove-albany-madrid.trycloudflare.com/api/auth/callback"
+  "https://render-sample-app-zue8.onrender.com/auth/callback",
+  "https://render-sample-app-zue8.onrender.com/auth/shopify/callback",
+  "https://render-sample-app-zue8.onrender.com/api/auth/callback"
 ]
 
 [pos]
